@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+ <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- About
+  Services
+  Projects
+  Contact
+
+  We are creatives
+
+  Transform your brand
+
+  We are a full-service creative agency specializing in helping brands grow fast. 
+  Engage your clients through compelling visuals that do most of the marketing for you.
+
+  Learn more
+
+  Stand out to the right audience
+
+  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+
+  Learn more
+
+  Graphic design
+  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+
+  Photography
+  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+
+  Client testimonials
+
+  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+  Emily R.
+  Marketing Director
+
+  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+  Thomas S.
+  Chief Operating Officer
+
+  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+  Jennie F.
+  Business Owner
+
+  About
+  Services
+  Projects
+  Contact -->
+  <header class="desktop-header">
+    <div class="desktop-header-content">
+      <img src="./images/logo.svg"/>
+      <div class="header-links">
+        <span>About</span>
+        <span>Services</span>
+        <span>Projects</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </header>
+  <header class="mobile-header">
+    <div class="mobile-header-top">
+      <img src="./images/logo.svg"/>
+      <img class="hamburger" src="./images/icon-hamburger.svg"/>
+    </div>
+    <ul class="">
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+  </header>
+  <section class="hero">
+    <div class="center">
+      <h1>WE ARE CREATIVES</h1>
+      <img class="icon-arrow-down" src="./images/icon-arrow-down.svg"/>
+    </div>
+  </section>
+  <section class="flex">
+    <div class="white-box-content">
+      <div class="white-box-inner-content">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#">LEARN MORE</a>
+      </div>
+      </div>
+
+    <div class="img-box">
+      <img src="./images/desktop/image-transform.jpg"/>
+    </div>
+  </section>
+  <section class="flex">
+    
+
+    <div class="img-box">
+      <img src="./images/desktop/image-stand-out.jpg"/>
+    </div>
+
+    <div class="white-box-content">
+      <div class="white-box-inner-content">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+          <a href="#">LEARN MORE</a>
+      </div>
+      </div>
+  </section>
+  <section class="flex">
+    <div class="bg-image cherry">
+      <div class="bg-image-content">
+        <h2>Graphic design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.        </p>
+      </div>
+    </div>
+    <div class="bg-image orange">
+        <div class="bg-image-content">
+          <h2>Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+    </div>
+  </section>
+  <section class="client-testimonials">
+    <h2>CLIENT TESTIMONIALS</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="./images/image-emily.jpg"/>
+        <p>
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <h3>Emily R.</h3>
+        <span>Marketting Director</span>
+      </div>
+      <div class="testimonial">
+        <img src="./images/image-thomas.jpg"/>
+        <p>
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        </p>
+        <h3>Thomas S.</h3>
+        <span>Chief Operating Officer</span>
+      </div>
+      <div class="testimonial">
+        <img src="./images/image-jennie.jpg"/>
+        <p>
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </p>
+        <h3>Jennie F.</h3>
+        <span>Business Owner</span>
+      </div>
+
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="gallery-img">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg"/>
+    </div>
+    <div class="gallery-img">
+      <img src="./images/desktop/image-gallery-orange.jpg"/>
+    </div>
+    <div class="gallery-img">
+      <img src="./images/desktop/image-gallery-cone.jpg"/>
+    </div>
+    <div class="gallery-img">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg"/>
+    </div>
+  </section>
+  <footer>
+    <h2>sunnyside</h2>
+    <div class="links">
+        <span>About</span>
+        <span>Services</span>
+        <span>Projects</span>
+
+    </div>
+    <div class="socials">
+      <img src="./images/icon-instagram.svg"/>
+      <img src="./images/icon-pinterest.svg"/>
+      <img src="./images/icon-twitter.svg"/>
+      <img src="./images/icon-facebook.svg"/>
+    </div>
+  </footer>
+  <script>
+    let menu = document.querySelector('.mobile-header ul');
+    document.querySelector('.hamburger').addEventListener('click',()=>{
+      if((menu.classList.contains('show-mobile-header'))){
+        menu.classList.remove('show-mobile-header');
+        setTimeout(() => {
+          menu.classList.remove('block');          
+        }, 120);
+      }
+      else{
+        menu.classList.add('block');
+        setTimeout(()=>{menu.classList.add('show-mobile-header')},120)
+      }
+    })
+  </script>
+</body>
+</html>
