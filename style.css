@@ -269,4 +269,8 @@ footer h2{
     font-size: 48px;
 }
   }
-  
+  @media (min-width: 1921px) {
+    *{
+        font-size: 36px;
+    }
+  }
