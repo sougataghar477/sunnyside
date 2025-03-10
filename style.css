@@ -253,6 +253,9 @@ footer h2{
     .mobile-header{
         display: block;
     }
+    .desktop-header{
+        display: none;
+    }
  .client-testimonials{
     padding-inline: 16px;
     padding-block: 80px;
